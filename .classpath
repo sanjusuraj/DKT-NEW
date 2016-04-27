@@ -25,5 +25,10 @@
 	<classpathentry kind="lib" path="C:/Users/ATNSW-Admin/Documents/selenium-java-2.53.0/selenium-2.53.0/libs/apache-mime4j-0.6.jar"/>
 	<classpathentry kind="lib" path="C:/Users/ATNSW-Admin/Documents/selenium-java-2.53.0/selenium-2.53.0/selenium-java-2.53.0-srcs.jar"/>
 	<classpathentry kind="lib" path="C:/Users/ATNSW-Admin/Documents/selenium-java-2.53.0/selenium-2.53.0/selenium-java-2.53.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ATNSW-Admin/Desktop/PerfDB/mysql-connector-java-5.1.38-bin.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ATNSW-Admin/Desktop/PerfDB/PerfDB.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ATNSW-Admin/Desktop/PerfDB/stopwatch-0.4-with-deps.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ATNSW-Admin/Desktop/PerfDB/commons-lang3-3.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ATNSW-Admin/Desktop/PerfDB/commons-lang3-3.4-javadoc.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
