@@ -39,11 +39,13 @@ public class DKTNew {
 			double res_time_sec = (double) RMSHome.getTime();
 			res_time_sec = res_time_sec/1000;
 			System.out.println(res_time_sec);
-			if(driver.findElement(By.linkText("Customer Charter")).getText()==expStr1)
+			if(driver.findElement(By.linkText("Customer Charter")).getText().equals(expStr1))
 				myPerfDB.recordStepResponseTime ("Roads and Maritime Services", "Driver Knowledge Test", "RMS Home Page", "RMS Home Page", "Pass", "Successfully executed", res_time_sec);
 			else{
 				myPerfDB.recordStepExecFailure("Roads and Maritime Services", "Driver Knowledge Test", "RMS Home Page", "RMS Home Page", "Fail", "Page not found");
 				myPerfDB.updateScriptExecutionFailure("Roads and Maritime Services", "Driver Knowledge Test", "RMS Home Page");
+				myPerfDB.closeConnections();
+				driver.close();
 			}
 		/*
 			String str2 = driver.findElement(By.xpath("html/body/main/div/section/div/div[3]/div[1]/h2/span")).getText();
@@ -67,11 +69,13 @@ public class DKTNew {
 			
 			res_time_sec = (double) DriverTest.getTime();
 			res_time_sec = res_time_sec/1000;
-			if( driver.findElement(By.xpath("//h1[@class='heading-middle']")).getText() == expStr4)				
+			if( driver.findElement(By.xpath("//h1[@class='heading-middle']")).getText().equals(expStr4))				
 				myPerfDB.recordStepResponseTime ("Roads and Maritime Services", "Driver Knowledge Test", "Driver Knowledge Test", "Driver Knowledge Test", "Pass", "Successfully executed", res_time_sec);
 			else{
 				myPerfDB.recordStepExecFailure("Roads and Maritime Services", "Driver Knowledge Test", "Driver Knowledge Test", "Driver Knowledge Test", "Fail", "Page not found");
 				myPerfDB.updateScriptExecutionFailure("Roads and Maritime Services", "Driver Knowledge Test", "Driver Knowledge Test");
+				myPerfDB.closeConnections();
+				driver.close();
 			}
 			PracticeDKT.start();
 			driver.findElement(By.linkText("Practice DKT")).click();
@@ -93,11 +97,13 @@ public class DKTNew {
 			res_time_sec = (double) LaunchDKT.getTime();
 			res_time_sec = res_time_sec/1000;
 			//if(str5 == expStr5)
-			if(str5==expStr5)
+			if(str5.equals(expStr5))
 				myPerfDB.recordStepResponseTime ("Roads and Maritime Services", "Driver Knowledge Test", "Launch online practise test", "Launch online practise test", "Pass", "Successfully executed", res_time_sec);
 			else{
 				myPerfDB.recordStepExecFailure("Roads and Maritime Services", "Driver Knowledge Test", "Launch online practise test", "Launch online practise test",  "Fail", "Page not found");
 				myPerfDB.updateScriptExecutionFailure("Roads and Maritime Services", "Driver Knowledge Test", "Launch online practise test");
+				myPerfDB.closeConnections();
+				driver.close();
 			}
 			myPerfDB.updateScriptExecSuccess("Driver Knowledge Test", "Roads and Maritime Services");
 			myPerfDB.closeConnections();

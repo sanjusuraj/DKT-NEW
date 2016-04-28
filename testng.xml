@@ -2,7 +2,7 @@
 <suite name="DKT Test">
 	<test name="DKT Home TC">
 		<classes>
-			<class name="home.DKT"/>
+			<class name="home.DKTNew"/>
 		</classes>
 	</test>
 </suite>
